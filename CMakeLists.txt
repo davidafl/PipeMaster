@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.15)
 
-project (oop2_ex04)
+project (PipeMaster)
 
 set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -9,8 +9,8 @@ if (MSVC)
     add_compile_options (/W4 /permissive- /Zc:externConstexpr /Zc:inline)
 endif ()
 
-add_executable (oop2_ex04 WIN32 "") 
-#add_executable (oop2_ex04  "")
+add_executable (PipeMaster WIN32 "") 
+#add_executable (PipeMaster  "")
 
 add_subdirectory (include)
 #add_subdirectory (include/graph)
@@ -29,5 +29,5 @@ configure_file(C:/SFML/SFML-2.5.1/bin/openal32.dll ${CMAKE_BINARY_DIR} COPYONLY)
 
 set_target_properties (sfml-main sfml-system sfml-window sfml-graphics sfml-audio sfml-network PROPERTIES MAP_IMPORTED_CONFIG_RELWITHDEBINFO RELEASE)
 
-target_link_libraries (oop2_ex04 sfml-main sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
+target_link_libraries (PipeMaster sfml-main sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
 
