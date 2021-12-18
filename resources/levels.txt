@@ -1,0 +1,43 @@
+3 8
+4 1  2 0  2 0  2 0  2 0  2 0  3 2  6 0
+6 0  3 1  2 0  2 0  2 0  2 0  3 1  6 0 
+6 0  3 2  2 1  2 0  2 0  2 0  2 2  5 3
+4 4
+2 0  3 0  2 0  3 0
+3 0  2 0  3 0  3 0
+3 0  5 3  3 2  3 0  
+2 0  4 1  2 0  3 3
+6 7
+6 0  3 3  3 1  0 0  3 3  0 0  6 0
+3 1  3 3  3 0  5 0  3 2  3 0  3 0
+3 3  3 2  2 0  1 0  3 0  3 2  2 0
+0 0  3 1  3 1  2 0  2 0  3 1  3 3
+6 0  3 0  0 0  2 0  3 3  3 1  6 0
+6 0  6 0  4 2  4 2  4 2  6 0  6 0
+5 7
+6 0  3 0  0 1  3 0  5 1  3 0  6 0
+3 1  3 3  2 1  4 0  1 0  3 3  3 0
+3 2  5 3  0 2  2 0  2 0  0 1  4 3
+3 1  2 1  3 3  0 1  5 3  2 1  2 1 
+4 3  2 1  2 1  6 0  3 3  3 0  3 2
+
+Dear bodek,
+In order to explain the format, I write comments here (an empty line is considered as end of all maps). 
+Any error (missing data, incorrect data, extra data) in one of these lines
+will cause the program to exit and the error type and line number will be
+written in log.txt file.
+
+The file contains all maps. Each maps is coded as:
+
+<row> <col>
+<type> <rotation>     <type> <rotation>  (as many as <col>)
+
+where:
+<type> : 0  | 1 | 2 | 3 | 4 | 5 | 6
+<rotation>: 0 | 1 | 2 | 3
+
+where types are:
+0 = TJunction,  1 = Cross, 2 = Straight, 3 = Turn, 4 = Tap, 5 = Sink, 6 = Empty
+
+and Rotation clockwise:
+0 = Up (0 degree)   1 = Right (90)  2 = Down (180)    3 = Left (270)
